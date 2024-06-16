@@ -564,8 +564,16 @@ video {
   position: sticky;
 }
 
+.bottom-\[3rem\]{
+  bottom: 3rem;
+}
+
 .right-\[1\.2rem\]{
   right: 1.2rem;
+}
+
+.right-\[1rem\]{
+  right: 1rem;
 }
 
 .top-0{
@@ -635,6 +643,10 @@ video {
 
 .scale-y-0{
   --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -749,6 +761,10 @@ video {
   padding-top: 2.5rem;
 }
 
+.pt-\[4rem\]{
+  padding-top: 4rem;
+}
+
 .text-left{
   text-align: left;
 }
@@ -785,6 +801,10 @@ video {
   font-size: 2rem;
 }
 
+.text-\[3rem\]{
+  font-size: 3rem;
+}
+
 .font-bold{
   font-weight: 700;
 }
@@ -813,6 +833,10 @@ video {
 .text-\[\#fff\]{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-0{
+  opacity: 0;
 }
 
 .shadow-button-shadow{
@@ -849,7 +873,7 @@ nav, .spans {
   transition: all .2s ease;
 }
 
-.logo, .about-h1, .about-h4 {
+.logo, .page-title , .sub {
   font-family: "Playfair Display", serif;
 }
 
@@ -891,6 +915,11 @@ nav, .spans {
 .x-shape span:nth-child(3) {
   transform: rotate(45deg) translate(-8px, -9px);
   transition: all .2s ease;
+}
+
+.benefits-ul {
+  list-style-type: disc;
+  padding: 0 1rem;
 }
 
 .active\:scale-\[\.9\]:active{
