@@ -588,6 +588,10 @@ video {
   margin-top: .3rem;
 }
 
+.mt-\[1rem\]{
+  margin-top: 1rem;
+}
+
 .mt-\[2rem\]{
   margin-top: 2rem;
 }
@@ -662,6 +666,10 @@ video {
   gap: 1rem;
 }
 
+.gap-\[2rem\]{
+  gap: 2rem;
+}
+
 .gap-\[3rem\]{
   gap: 3rem;
 }
@@ -689,6 +697,18 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-about-image{
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('./assets/image2.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
 .p-\[1rem\]{
   padding: 1rem;
 }
@@ -701,6 +721,11 @@ video {
 .px-\[2rem\]{
   padding-left: 2rem;
   padding-right: 2rem;
+}
+
+.px-\[4rem\]{
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .py-\[2rem\]{
@@ -738,6 +763,10 @@ video {
 
 .text-\[\.9rem\]{
   font-size: .9rem;
+}
+
+.text-\[1\.3rem\]{
+  font-size: 1.3rem;
 }
 
 .text-\[1\.5rem\]{
@@ -792,6 +821,26 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-button-shadow2{
+  --tw-shadow: 0 0 8px white;
+  --tw-shadow-colored: 0 0 8px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
+}
+
+.ease-linear{
+  transition-timing-function: linear;
+}
+
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -800,7 +849,7 @@ nav, .spans {
   transition: all .2s ease;
 }
 
-.logo {
+.logo, .about-h1, .about-h4 {
   font-family: "Playfair Display", serif;
 }
 
@@ -842,6 +891,12 @@ nav, .spans {
 .x-shape span:nth-child(3) {
   transform: rotate(45deg) translate(-8px, -9px);
   transition: all .2s ease;
+}
+
+.active\:scale-\[\.9\]:active{
+  --tw-scale-x: .9;
+  --tw-scale-y: .9;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 @media (min-width: 768px){

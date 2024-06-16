@@ -1,12 +1,17 @@
+
+// nav button functionality
+
 const navButton = document.getElementById('nav-button');
 const burgerNav = document.getElementById('burger-nav');
 const xShape = document.querySelector('.spans');
 
+// toggles classes that transforms the 3 spans to form a burger nav button and X button
 navButton.addEventListener('click', () => {
     burgerNav.classList.toggle('showNav');
     xShape.classList.toggle('x-shape');
 })
 
+// when the burger nav contents shows (home, about, etc...), disable the scrolling
 let scrollingDisabled = false;
 
 navButton.addEventListener('click', () => {
@@ -21,6 +26,7 @@ navButton.addEventListener('click', () => {
         
 })
 
+// when the user scrolls down from the top (scrolY = 0), the logo and burger nav will disappear
 document.addEventListener('scroll', () => {
 
     const nav = document.getElementById('nav');
@@ -36,14 +42,3 @@ document.addEventListener('scroll', () => {
     }
 })
 
-// let scrollDisabled = false;
-
-// function toggleScroll() {
-//     if(scrollDisabled) {
-//         document.body.style.overflow = 'auto'
-//         scrollDisabled = false
-//     } else {
-//         document.body.style.overflow = 'hidden'
-//         scrollDisabled = true
-//     }
-// }
