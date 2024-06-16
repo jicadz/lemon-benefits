@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./public/**/*.html"],
   theme: {
-    extend: {},
+    extend: {
+      boxShadow: {
+        'button-shadow' : '0 0 8px gray'
+      }
+    },
   },
   plugins: [],
 }

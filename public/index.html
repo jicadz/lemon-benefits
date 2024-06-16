@@ -4,18 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a3ac149652.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <section>
-        <nav>
+        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[1rem] sticky top-0" id="nav">
             <div>
-                <h1 class="text-[#ff2c2c]">LEMONaid</h1>
-            </div>
-            <div>
-
+                <h1 class="logo text-[2rem] font-bold text-[#ff2c2c]">LEMONaide</h1>
+                <p class="text-[.9rem] font-medium">Thoughts on Lifestyle & Mental Health</p>
             </div>
         </nav>
+
+        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem]" id="nav-button">
+            <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
+            <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
+            <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
+        </div>
+
+        <main class="flex flex-col items-center gap-[1.5rem] pt-[1rem] pb-[6rem]">
+            <div>
+                <img src="./assets/image1.jpg" alt="">
+            </div>
+            <div class="px-[1rem] text-left">
+                <p class="text-[1.8rem] leading-[2.5rem] font-medium">A Glass of Water with a Slice of Lemon</p>
+                <p class="font-light mt-[.3rem] text-[.8rem]">Drinking water with lemon is an easy way to enhance hydration, support digestion, and give your immune system a natural boost. This simple ritual can invigorate your day and contribute to overall wellness.</p>
+            </div>
+            <button class="bg-[#ff2c2c] text-[#fff] p-[1rem] px-[2rem] font-semibold w-[fit-content] rounded-[30px] shadow-button-shadow">CHECK BENEFITS</button>
+        </main>
+
+        <footer class="bg-[#363636] flex flex-col items-center text-center p-[1rem] py-[2rem]">
+            <div class="text-[#fff] text-[1.6rem] flex gap-[3rem]">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+            <div class="text-[#fff] mt-[2rem] text-[.8rem] flex flex-col gap-[1rem]">
+                <p>123-456-7889</p>
+                <p>lemonAide@gmail.com</p>
+                <p>&#169 by LEMONaide</p>
+            </div>
+        </footer>
+
+        <div class="bg-[#fff] h-[100vh] w-[100%] fixed top-0 justify-center scale-y-0" id="burger-nav">
+            <ul class="mt-[6rem] text-center flex flex-col gap-[3rem] text-[1.5rem] text-[#ff2c2c]">
+                <li>Home</li>
+                <li>About</li>
+                <li>Benefits</li>
+                <li>Testimonials</li>
+                <li>Join Us</li>
+            </ul>
+        </div>
+
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>

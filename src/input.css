@@ -8,6 +8,50 @@
     font-family: "Poppins", sans-serif;
 }
 
+nav, .spans {
+    transition: all .2s ease;
+}
+
 .logo {
     font-family: "Playfair Display", serif;
+}
+
+.showNav {
+    transform: scaleY(1);
+    transition: all .5s ease;
+}
+
+.disableScroll {
+    overflow: hidden;
+}
+
+.hideFooter {
+    display: none;
+}
+
+.spans span:nth-child(1) {
+    transition: all .2s ease;
+}
+
+.spans span:nth-child(2) {
+    transition: all .2s ease;
+}
+
+.spans span:nth-child(3) {
+    transition: all .2s ease;
+}
+
+.x-shape span:nth-child(1) {
+   transform: rotate(-45deg) translate(-8px, 8px);
+   transition: all .2s ease;
+}
+
+.x-shape span:nth-child(2) {
+    opacity: 0;
+    transition: all .2s ease;
+}
+
+.x-shape span:nth-child(3) {
+    transform: rotate(45deg) translate(-8px, -9px);
+    transition: all .2s ease;
 }
