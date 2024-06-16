@@ -66,3 +66,17 @@ nav, .spans {
 /* .arrow-up {
     transition: all .5s ease;
 } */
+
+
+
+/* footer */
+
+.form label {
+    font-family: "Playfair Display", serif;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.form h1, .form input[type='submit'] {
+    font-family: "Playfair Display", serif;
+}

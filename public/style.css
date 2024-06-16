@@ -608,6 +608,10 @@ video {
   margin-top: 6rem;
 }
 
+.mt-\[\]{
+  margin-top: ;
+}
+
 .block{
   display: block;
 }
@@ -618,6 +622,14 @@ video {
 
 .h-\[100vh\]{
   height: 100vh;
+}
+
+.h-\[110vh\]{
+  height: 110vh;
+}
+
+.h-\[150px\]{
+  height: 150px;
 }
 
 .h-\[15vh\]{
@@ -636,9 +648,27 @@ video {
   width: 35px;
 }
 
+.w-\[75\%\]{
+  width: 75%;
+}
+
 .w-\[fit-content\]{
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[\]{
+  width: ;
+}
+
+.w-\[fit-conte\]{
+  width: fit-conte;
+}
+
+.scale-0{
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .scale-y-0{
@@ -694,6 +724,14 @@ video {
   border-radius: 5px;
 }
 
+.rounded{
+  border-radius: 0.25rem;
+}
+
+.rounded-\[\]{
+  border-radius: ;
+}
+
 .bg-\[\#363636\]{
   --tw-bg-opacity: 1;
   background-color: rgb(54 54 54 / var(--tw-bg-opacity));
@@ -709,6 +747,10 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\]{
+  background-color: ;
+}
+
 .bg-about-image{
   background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('./assets/image2.jpg');
 }
@@ -721,8 +763,16 @@ video {
   background-position: center;
 }
 
+.p-\[\.5rem\]{
+  padding: .5rem;
+}
+
 .p-\[1rem\]{
   padding: 1rem;
+}
+
+.p-\[\]{
+  padding: ;
 }
 
 .px-\[1rem\]{
@@ -745,6 +795,16 @@ video {
   padding-bottom: 2rem;
 }
 
+.py-\[\.5rem\]{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.px-\[\]{
+  padding-left: ;
+  padding-right: ;
+}
+
 .pb-\[1rem\]{
   padding-bottom: 1rem;
 }
@@ -759,6 +819,10 @@ video {
 
 .pt-\[2\.5rem\]{
   padding-top: 2.5rem;
+}
+
+.pt-\[2rem\]{
+  padding-top: 2rem;
 }
 
 .pt-\[4rem\]{
@@ -809,10 +873,6 @@ video {
   font-weight: 700;
 }
 
-.font-light{
-  font-weight: 300;
-}
-
 .font-medium{
   font-weight: 500;
 }
@@ -835,8 +895,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.opacity-0{
-  opacity: 0;
+.text-\[\]{
+  color: ;
+}
+
+.text-\[\#000\]{
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .shadow-button-shadow{
@@ -849,6 +914,19 @@ video {
   --tw-shadow: 0 0 8px white;
   --tw-shadow-colored: 0 0 8px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.transition{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .transition-all{
@@ -917,9 +995,27 @@ nav, .spans {
   transition: all .2s ease;
 }
 
+/* benefits */
+
 .benefits-ul {
   list-style-type: disc;
   padding: 0 1rem;
+}
+
+/* .arrow-up {
+    transition: all .5s ease;
+} */
+
+/* footer */
+
+.form label {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.form h1, .form input[type='submit'] {
+  font-family: "Playfair Display", serif;
 }
 
 .active\:scale-\[\.9\]:active{
