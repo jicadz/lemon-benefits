@@ -71,12 +71,17 @@ nav, .spans {
 
 /* footer */
 
-.form label {
+.form h1 {
     font-family: "Playfair Display", serif;
-    font-size: 1.3rem;
+}
+
+.form input[type='text'], .form textarea {
+    border-bottom: 1px solid #fff;
+    background: transparent;
     color: #fff;
 }
 
-.form h1, .form input[type='submit'] {
-    font-family: "Playfair Display", serif;
+.form input[type='text']:focus,
+ .form textarea:focus {
+    border-bottom: 3px solid white;
 }
