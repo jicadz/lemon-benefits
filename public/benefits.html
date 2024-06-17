@@ -28,7 +28,7 @@
         </div>
 
         <main class="px-[1rem] py-[2rem] pb-[6rem] flex flex-col gap-[2rem]">
-            <h1 class="page-title font-semibold text-[2rem] text-center">Benefits</h1>
+            <h1 class="page-title font-semibold text-[2rem] text-center text-[#ff2c2c]">Benefits</h1>
             <div>
                 <h4 class="sub font-semibold text-[1.3rem]">Why Lemon Water?</h4>
                 <p>Lemon water is more than just a tasty, tangy drink. It's a daily habit that can transform your health in several significant ways:</p>
@@ -120,11 +120,11 @@
                 
                 <div class="flex flex-col mt-[2rem] gap-[1rem] text-[1.2rem] text-[#fff]">
                 <label for="name" class="font-extralight">Name:</label>
-                <input type="text" id="name" class="outline-none p-[.5rem]" autocomplete="off">
+                <input type="text" id="name" class="outline-none p-[.5rem]" autocomplete="off" required>
                 <label for="email" class="font-extralight">Email:</label>
-                <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off">
+                <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off" required>
                 <label for="message" class="font-extralight">Leave us a message...</label>
-                <textarea name="" id="message" class="outline-none p-[.5rem]" autocomplete="off"></textarea>
+                <textarea name="" id="message" class="outline-none p-[.5rem]" autocomplete="off" required></textarea>
                 <input type="submit" value="Submit" class="border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] font-extralight active:bg-[#fff] active:text-[#000]">
                 </div>
 
@@ -133,7 +133,7 @@
                 <p class="logo text-[2rem] text-[#ff2c2c] font-semibold">LEMONaide</p>
                 <p>123-456-7889</p>
                 <p>lemonAide@gmail.com</p>
-                <p>&#169 by LEMONaide</p>
+                <p>&#169 by LEMONaide 2024</p>
             </div>
         </footer>
 
@@ -142,8 +142,8 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="benefits.html">Benefits</a></li>
-                <li><a href="">Testimonials</a></li>
-                <li><a href="">Join Us</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="joinUs.html">Join Us</a></li>
             </ul>
         </div>
 
@@ -151,6 +151,7 @@
 
     <script src="script.js"></script>
     <script>
+        // an arrow button that disappears and reappears when you reach a scrollY position
         const arrowUp = document.getElementById('arrow-up');
         document.addEventListener('DOMContentLoaded', () => {
 
