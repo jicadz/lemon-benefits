@@ -56,20 +56,15 @@ nav, .spans {
     transition: all .2s ease;
 }
 
-/* benefits */
+/* benefits - how to create lemon water */
 
 .benefits-ul {
     list-style-type: disc;
     padding: 0 1rem;
 }
 
-/* .arrow-up {
-    transition: all .5s ease;
-} */
 
-
-
-/* footer */
+/* footer contact form */
 
 .form h1 {
     font-family: "Playfair Display", serif;
@@ -87,14 +82,14 @@ nav, .spans {
 }
 
 
-/* image */
+/* testimonials user image */
 
 .user-image {
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-/* join us */
+/* join us form */
 
 .join-form input[type='text'] {
     border-bottom: 1px solid #ff2c2c;
@@ -105,4 +100,16 @@ nav, .spans {
 
 .join-form input[type='text']:focus {
     border-bottom: 2px solid #ff2c2c;
+}
+
+/* icons */
+
+.fa-brands {
+    cursor: pointer;
+}
+
+/* up arrow */
+
+.arrow-up {
+    cursor: pointer;
 }

@@ -10,96 +10,119 @@
 </head>
 <body>
     <section>
-        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[1rem] sticky top-0" id="nav">
+        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[2rem] sticky top-0 bg-[#fff] lg:h-[23vh] lg:px-[2rem]" id="nav">
             <div>
-                <h1 class="logo text-[2rem] font-bold text-[#ff2c2c]">LEMONaide</h1>
+                <h1 class="logo text-[2rem] font-bold text-[#ff2c2c] lg:text-[3rem]">LEMONaide</h1>
                 <p class="text-[.9rem] font-medium">Thoughts on Lifestyle & Mental Health</p>
             </div>
+            <ul class="lg:flex flex-row items-center gap-[3rem] text-[#000] hidden">
+                <li class="hover:text-[#ff2c2c]"><a href="index.html">Home</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="about.html">About</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="benefits.html">Benefits</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="testimonials.html">Testimonials</a></li>
+                <a href="joinUs.html"><li class="cursor-pointer bg-[#fff] text-[#ff2c2c] px-[2rem] py-[.5rem] border-[1px] border-[solid] border-[#ff2c2c] rounded-[5px] hover:bg-[#ff2c2c] hover:text-[#fff] transition-all duration-200 ease-linear">Join Us</li></a>
+            </ul>
         </nav>
 
-        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem]" id="nav-button">
+        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem] lg:hidden" id="nav-button">
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
         </div>
 
-        <div class="fixed right-[1rem] scale-0 bottom-[3rem] arrow-up" id="arrow-up">
+        <div class="fixed right-[1rem] scale-0 bottom-[3rem] z-[99] arrow-up" id="arrow-up">
             <i class="fa fa-chevron-circle-up text-[#ff2c2c] text-[3rem]" aria-hidden="true"></i>
         </div>
 
-        <main class="px-[1rem] py-[2rem] pb-[6rem] flex flex-col gap-[2rem]">
-            <h1 class="page-title font-semibold text-[2rem] text-center text-[#ff2c2c]">Benefits</h1>
+        <main class="px-[1rem] py-[2rem] pb-[6rem] flex flex-col gap-[2rem] md:px-[2.5rem]">
+            <h1 class="page-title font-semibold text-[2rem] text-center text-[#ff2c2c] md:text-[3rem]">Benefits</h1>
             <div>
-                <h4 class="sub font-semibold text-[1.3rem]">Why Lemon Water?</h4>
-                <p>Lemon water is more than just a tasty, tangy drink. It's a daily habit that can transform your health in several significant ways:</p>
+                <h4 class="sub font-semibold text-[1.3rem] md:text-[2rem]">Why Lemon Water?</h4>
+                <p class="md:text-[1.1rem]">Lemon water is more than just a tasty, tangy drink. It's a daily habit that can transform your health in several significant ways:</p>
             </div>
 
-            <div class="flex flex-col gap-[1rem]">
-                <p class="text-[1.3rem] font-medium">1. Boosts Immune System</p>
-                <p>Lemons are rich in vitamin C, a natural antioxidant that enhances your immune system. Starting your day with a glass of lemon water can help ward off colds and infections, keeping you healthy and energetic.</p>
-                <div>
-                    <img src="./assets/image3.jpg" alt="">                    
+            <div class="flex flex-col gap-[2rem] md:gap-[5rem] md:mt-[3rem]">
+                <div class="flex flex-col gap-[1rem] md:flex-row md:items-center md:gap-[2rem]">
+                    <div class="md:w-[50%]">
+                        <p class="text-[1.3rem] font-medium">1. Boosts Immune System</p>
+                        <p class="md:text-[1.1rem] md:mt-[2rem]">Lemons are rich in vitamin C, a natural antioxidant that enhances your immune system. Starting your day with a glass of lemon water can help ward off colds and infections, keeping you healthy and energetic.</p>
+                    </div>
+                    <div class="rounded-[15px] overflow-hidden shadow-button-shadow">
+                        <img src="./assets/image3.jpg" class="md:h-[280px] md:w-[400px] lg:h-[350px] lg:w-[500px]" alt="">                    
+                    </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col gap-[1rem]">
-                <p class="text-[1.3rem] font-medium">2. Aids Digestion</p>
-                <p>The acidic nature of lemon juice stimulates the production of stomach acid and bile, which aids in digestion. Drinking lemon water can help prevent indigestion, bloating, and heartburn, ensuring your digestive system functions smoothly.</p>
-                <div>
-                    <img src="./assets/image4.jpg" alt="">                    
+    
+                <div class="flex flex-col gap-[1rem] md:flex-row-reverse md:items-center md:gap-[2rem]">
+                    <div class="md:w-[50%]">
+                        <p class="text-[1.3rem] font-medium">2. Aids Digestion</p>
+                        <p class="md:text-[1.1rem] md:mt-[2rem]">The acidic nature of lemon juice stimulates the production of stomach acid and bile, which aids in digestion. Drinking lemon water can help prevent indigestion, bloating, and heartburn, ensuring your digestive system functions smoothly.</p>
+                    </div>
+                    <div class="rounded-[15px] overflow-hidden shadow-button-shadow">
+                        <img src="./assets/image4.jpg" class="md:h-[280px] md:w-[400px] lg:h-[350px] lg:w-[500px]" alt="">                    
+                    </div>
                 </div>
-            </div>
-            
-            <div class="flex flex-col gap-[1rem]">
-                <p class="text-[1.3rem] font-medium">3. Hydrates and Energizes</p>
-                <p>Proper hydration is key to maintaining energy levels and overall health. Adding lemon to your water not only makes it more enjoyable to drink but also provides an extra kick of energy and hydration, keeping you alert and revitalized throughout the day.</p>
-                <div>
-                    <img src="./assets/image5.jpg" alt="">                    
+                
+                <div class="flex flex-col gap-[1rem] md:flex-row md:items-center md:gap-[2rem]">
+                    <div class="md:w-[50%]">
+                        <p class="text-[1.3rem] font-medium">3. Hydrates and Energizes</p>
+                        <p class="md:text-[1.1rem] md:mt-[2rem]">Proper hydration is key to maintaining energy levels and overall health. Adding lemon to your water not only makes it more enjoyable to drink but also provides an extra kick of energy and hydration, keeping you alert and revitalized throughout the day.</p>
+                    </div>
+                    <div class="rounded-[15px] overflow-hidden shadow-button-shadow">
+                        <img src="./assets/image5.jpg" class="md:h-[280px] md:w-[400px] lg:h-[350px] lg:w-[500px]" alt="">                    
+                    </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col gap-[1rem]">
-                <p class="text-[1.3rem] font-medium">4. Promotes Healthy Skin</p>
-                <p>The antioxidants in lemon water combat free radicals, helping to keep your skin clear, youthful, and glowing. Vitamin C also plays a crucial role in collagen production, essential for smooth and firm skin.</p>
-                <div>
-                    <img src="./assets/image6.jpg" alt="">                    
+    
+                <div class="flex flex-col gap-[1rem] md:flex-row-reverse md:items-center md:gap-[2rem]">
+                    <div class="md:w-[50%]">
+                        <p class="text-[1.3rem] font-medium">4. Promotes Healthy Skin</p>
+                        <p class="md:text-[1.1rem] md:mt-[2rem]">The antioxidants in lemon water combat free radicals, helping to keep your skin clear, youthful, and glowing. Vitamin C also plays a crucial role in collagen production, essential for smooth and firm skin.</p>
+                    </div>
+                    <div class="rounded-[15px] overflow-hidden shadow-button-shadow">
+                        <img src="./assets/image6.jpg" class="md:h-[280px] md:w-[400px] lg:h-[350px] lg:w-[500px]" alt="">                    
+                    </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col gap-[1rem]">
-                <p class="text-[1.3rem] font-medium">5. Supports Weight Loss</p>
-                <p>Lemon water is a great addition to a weight loss regimen. The pectin fiber in lemons helps curb hunger cravings, while the increased hydration and improved digestion contribute to a more efficient metabolism.</p>
-                <div>
-                    <img src="./assets/image7.jpg" alt="">                    
+    
+                <div class="flex flex-col gap-[1rem] md:flex-row md:items-center md:gap-[2rem]">
+                    <div class="md:w-[50%]">
+                        <p class="text-[1.3rem] font-medium">5. Supports Weight Loss</p>
+                        <p class="md:text-[1.1rem] md:mt-[2rem]">Lemon water is a great addition to a weight loss regimen. The pectin fiber in lemons helps curb hunger cravings, while the increased hydration and improved digestion contribute to a more efficient metabolism.</p>
+                    </div>
+                    <div class="rounded-[15px] overflow-hidden shadow-button-shadow">
+                        <img src="./assets/image7.jpg" class="md:h-[280px] md:w-[400px] lg:h-[350px] lg:w-[500px]" alt="">                    
+                    </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col gap-[1rem]">
-                <p class="text-[1.3rem] font-medium">6. Cleanses and Detoxifies</p>
-                <p>Lemon water acts as a natural diuretic, promoting the elimination of toxins from the body. This gentle detoxification supports liver function and helps maintain a clean and healthy system.</p>
-                <div>
-                    <img src="./assets/image8.jpg" alt="">                    
+    
+                <div class="flex flex-col gap-[1rem] md:flex-row-reverse md:items-center md:gap-[2rem]">
+                    <div class="md:w-[50%]">
+                        <p class="text-[1.3rem] font-medium">6. Cleanses and Detoxifies</p>
+                        <p class="md:text-[1.1rem] md:mt-[2rem]">Lemon water acts as a natural diuretic, promoting the elimination of toxins from the body. This gentle detoxification supports liver function and helps maintain a clean and healthy system.</p>
+                    </div>
+                    <div class="rounded-[15px] overflow-hidden shadow-button-shadow">
+                        <img src="./assets/image8.jpg" class="md:h-[280px] md:w-[400px] lg:h-[350px] lg:w-[500px]" alt="">                    
+                    </div>
                 </div>
-            </div>
-
-            <div class="flex flex-col gap-[1rem]">
-                <p class="text-[1.3rem] font-medium">7. Balances pH Levels</p>
-                <p>Despite being acidic in nature, lemons have an alkalizing effect on the body. Drinking lemon water regularly can help balance your body's pH levels, reducing acidity and inflammation.</p>
-                <div>
-                    <img src="./assets/image9.jpg" alt="">                    
+    
+                <div class="flex flex-col gap-[1rem]  md:flex-row md:items-center md:gap-[2rem]">
+                    <div class="md:w-[50%]">
+                        <p class="text-[1.3rem] font-medium">7. Balances pH Levels</p>
+                        <p class="md:text-[1.1rem] md:mt-[2rem]">Despite being acidic in nature, lemons have an alkalizing effect on the body. Drinking lemon water regularly can help balance your body's pH levels, reducing acidity and inflammation.</p>
+                    </div>
+                    <div class="rounded-[15px] overflow-hidden shadow-button-shadow">
+                        <img src="./assets/image9.jpg" class="md:h-[280px] md:w-[400px] lg:h-[350px] lg:w-[500px]" alt="">                    
+                    </div>
                 </div>
             </div>
 
             <div class="flex flex-col gap-[1rem] pt-[4rem]">
-                <p class="sub font-semibold text-[1.3rem]">How to make Lemon Water?</p>
-                <p>Making lemon water is simple and quick. Here's our favorite recipe for a refreshing and health-boosting drink:</p>
-                <p class="sub font-semibold text-[1.3rem]">Ingredients</p>
-                <ul class="benefits-ul">
+                <p class="sub font-semibold text-[1.3rem] md:text-[2rem]">How to make Lemon Water?</p>
+                <p class="md:text-[1.1rem]">Making lemon water is simple and quick. Here's our favorite recipe for a refreshing and health-boosting drink:</p>
+                <p class="sub font-semibold text-[1.3rem] md:text-[2rem]">Ingredients</p>
+                <ul class="benefits-ul md:text-[1.1rem]">
                     <li>1 fresh lemon</li>
                     <li>1 glass of filtered water (warm or cold, as per your preference)</li>
                 </ul>
-                <p class="sub font-semibold text-[1.3rem]">Instructions</p>
-                <ul class="benefits-ul">
+                <p class="sub font-semibold text-[1.3rem] md:text-[2rem]">Instructions</p>
+                <ul class="benefits-ul md:text-[1.1rem]">
                     <li>Cut the lemon in half and squeeze the juice from one half into the glass of water.</li>
                     <li>For added flavor and benefits, you can add slices of the remaining lemon half into the water.</li>
                     <li>Stir well and enjoy!</li>
@@ -107,29 +130,35 @@
             </div>
         </main>
 
-        <footer class="bg-[#363636] flex flex-col text-center p-[2rem] py-[3rem]">
-            <div class="text-[#fff] text-[1.6rem] flex gap-[1.5rem]">
+        <footer class="bg-[#363636] flex flex-col text-center p-[2rem] py-[3rem] md:flex-row md:py-[1rem] md:px-[3rem] lg:px-[10%] relative">
+            <div class="text-[#fff] text-[1.6rem] flex gap-[1.5rem] md:absolute md:right-[5rem] md:pt-[10rem] lg:right-[10%] lg:lg:top-[-15%] lg:gap-[5rem]">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-x-twitter"></i>
                 <i class="fa-brands fa-tiktok"></i>
             </div>
-            <form action="" class="flex flex-col w-[100%] text-left gap-[.5rem] pt-[2rem] pb-[1rem] form">
+            <form action="" class="flex flex-col text-left gap-[.5rem] pt-[2rem] pb-[1rem] form md:w-[50%] md:order-[-1] lg:w-[fit-content]">
                 <h1 class="text-[2rem] text-[#fff] font-semibold">Contact Us</h1>
                 <p class="text-[1.3rem] text-[#fff] font-extralight">Ask us anything</p>
                 
-                <div class="flex flex-col mt-[2rem] gap-[1rem] text-[1.2rem] text-[#fff]">
-                <label for="name" class="font-extralight">Name:</label>
-                <input type="text" id="name" class="outline-none p-[.5rem]" autocomplete="off" required>
-                <label for="email" class="font-extralight">Email:</label>
-                <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off" required>
-                <label for="message" class="font-extralight">Leave us a message...</label>
-                <textarea name="" id="message" class="outline-none p-[.5rem]" autocomplete="off" required></textarea>
-                <input type="submit" value="Submit" class="border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] font-extralight active:bg-[#fff] active:text-[#000]">
+                <div class="flex flex-col mt-[2rem] gap-[1rem] text-[1.2rem] text-[#fff] md:mt-[1rem] md:gap-[.5rem] md:text-[1rem]">
+                <div class="flex flex-col gap-[1rem] lg:flex-row">
+                    <div class="flex flex-col">
+                        <label for="name" class="font-extralight">Name:</label>
+                        <input type="text" id="name" class="outline-none p-[.5rem] font-normal" autocomplete="off" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="font-extralight">Email:</label>
+                        <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off" required>
+                    </div>
+                </div>
+                <label for="message" class="font-extralight lg:mt-[1rem]">Leave us a message...</label>
+                <textarea name="" id="message" class="outline-none p-[.5rem] resize-none" autocomplete="off" required></textarea>
+                <input type="submit" value="Submit" class="font-normal border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] active:bg-[#fff] active:text-[#000] md:mt-[1rem] cursor-pointer hover:bg-[#fff] hover:text-[#000] transition-all duration-200 ease-linear">
                 </div>
 
             </form>
-            <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem]">
+            <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem] md:absolute md:right-[4.2rem] md:mt-[13rem] md:text-center lg:right-[15%] lg:top-[-10%]">
                 <p class="logo text-[2rem] text-[#ff2c2c] font-semibold">LEMONaide</p>
                 <p>123-456-7889</p>
                 <p>lemonAide@gmail.com</p>

@@ -10,53 +10,66 @@
 </head>
 <body>
     <section>
-        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[1rem] sticky top-0" id="nav">
+        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[2rem] sticky top-0 bg-[#fff] lg:h-[23vh] lg:px-[2rem]" id="nav">
             <div>
-                <h1 class="logo text-[2rem] font-bold text-[#ff2c2c]">LEMONaide</h1>
+                <h1 class="logo text-[2rem] font-bold text-[#ff2c2c] lg:text-[3rem]">LEMONaide</h1>
                 <p class="text-[.9rem] font-medium">Thoughts on Lifestyle & Mental Health</p>
             </div>
+            <ul class="lg:flex flex-row items-center gap-[3rem] text-[#000] hidden">
+                <li class="hover:text-[#ff2c2c]"><a href="index.html">Home</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="about.html">About</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="benefits.html">Benefits</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="testimonials.html">Testimonials</a></li>
+                <a href="joinUs.html"><li class="cursor-pointer bg-[#fff] text-[#ff2c2c] px-[2rem] py-[.5rem] border-[1px] border-[solid] border-[#ff2c2c] rounded-[5px] hover:bg-[#ff2c2c] hover:text-[#fff] transition-all duration-200 ease-linear">Join Us</li></a>
+            </ul>
         </nav>
 
-        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem]" id="nav-button">
+        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem] lg:hidden" id="nav-button">
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
         </div>
 
-        <main class="flex flex-col items-center gap-[1.5rem] pt-[1rem] pb-[6rem]">
-            <div>
+        <main class="flex flex-col items-center gap-[1.5rem] pt-[1rem] pb-[6rem] lg:flex-row lg:px-[2rem] lg:pt-[5%]">
+            <div class="lg:w-[100%]">
                 <img src="./assets/image1.jpg" alt="">
             </div>
-            <div class="px-[1rem] text-center">
-                <p class="logo text-[1.8rem] leading-[2.5rem] font-medium">A Glass of Water with a Slice of Lemon</p>
-                <p class="font-medium mt-[.3rem]">Lemon water is a refreshing beverage made by mixing fresh lemon juice with water. It is known for its tangy flavor and numerous health benefits. Drinking water with lemon is an easy way to enhance hydration, support digestion, and give your immune system a natural boost. This simple ritual can invigorate your day and contribute to overall wellness.</p>
+            <div class="px-[1rem] text-center md:w-[80%]">
+                <p class="logo text-[1.8rem] leading-[2.5rem] font-medium lg:text-[2.5rem]">A Glass of Water with a Slice of Lemon</p>
+                <p class="mt-[1rem] lg:mt-[1rem] md:leading-loose">Lemon water is a refreshing beverage made by mixing fresh lemon juice with water. It is known for its tangy flavor and numerous health benefits. Drinking water with lemon is an easy way to enhance hydration, support digestion, and give your immune system a natural boost. This simple ritual can invigorate your day and contribute to overall wellness.</p>
+                <button class="bg-[transparent] text-[#ff2c2c] border-[#ff2c2c] border-[1px] border-[solid] p-[1rem] px-[2rem] mt-[2rem] w-[fit-content] rounded-[5px] active:bg-[#ff2c2c] active:text-[#fff] hover:bg-[#ff2c2c] hover:text-[#fff] transition-all duration-200 ease-linear"><a href="./benefits.html">Check Benefits</a></button>
             </div>
-            <button class="bg-[transparent] text-[#ff2c2c] border-[#ff2c2c] border-[1px] border-[solid] p-[1rem] px-[2rem] mt-[1rem] font-normal w-[fit-content] rounded-[5px] active:bg-[#ff2c2c] active:text-[#fff]"><a href="./benefits.html">Check Benefits</a></button>
         </main>
 
-        <footer class="bg-[#363636] flex flex-col text-center p-[2rem] py-[3rem]">
-            <div class="text-[#fff] text-[1.6rem] flex gap-[1.5rem]">
+        <footer class="bg-[#363636] flex flex-col text-center p-[2rem] py-[3rem] md:flex-row md:py-[1rem] md:px-[3rem] lg:px-[10%] relative">
+            <div class="text-[#fff] text-[1.6rem] flex gap-[1.5rem] md:absolute md:right-[5rem] md:pt-[10rem] lg:right-[10%] lg:lg:top-[-15%] lg:gap-[5rem]">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-x-twitter"></i>
                 <i class="fa-brands fa-tiktok"></i>
             </div>
-            <form action="" class="flex flex-col w-[100%] text-left gap-[.5rem] pt-[2rem] pb-[1rem] form">
+            <form action="" class="flex flex-col text-left gap-[.5rem] pt-[2rem] pb-[1rem] form md:w-[50%] md:order-[-1] lg:w-[fit-content]">
                 <h1 class="text-[2rem] text-[#fff] font-semibold">Contact Us</h1>
                 <p class="text-[1.3rem] text-[#fff] font-extralight">Ask us anything</p>
                 
-                <div class="flex flex-col mt-[2rem] gap-[1rem] text-[1.2rem] text-[#fff]">
-                <label for="name" class="font-extralight">Name:</label>
-                <input type="text" id="name" class="outline-none p-[.5rem]" autocomplete="off" required>
-                <label for="email" class="font-extralight">Email:</label>
-                <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off" required>
-                <label for="message" class="font-extralight">Leave us a message...</label>
-                <textarea name="" id="message" class="outline-none p-[.5rem]" autocomplete="off" required></textarea>
-                <input type="submit" value="Submit" class="border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] font-extralight active:bg-[#fff] active:text-[#000]">
+                <div class="flex flex-col mt-[2rem] gap-[1rem] text-[1.2rem] text-[#fff] md:mt-[1rem] md:gap-[.5rem] md:text-[1rem]">
+                <div class="flex flex-col gap-[1rem] lg:flex-row">
+                    <div class="flex flex-col">
+                        <label for="name" class="font-extralight">Name:</label>
+                        <input type="text" id="name" class="outline-none p-[.5rem] font-normal" autocomplete="off" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="font-extralight">Email:</label>
+                        <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off" required>
+                    </div>
+                </div>
+                <label for="message" class="font-extralight lg:mt-[1rem]">Leave us a message...</label>
+                <textarea name="" id="message" class="outline-none p-[.5rem] resize-none" autocomplete="off" required></textarea>
+                <input type="submit" value="Submit" class="font-normal border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] active:bg-[#fff] active:text-[#000] md:mt-[1rem] cursor-pointer hover:bg-[#fff] hover:text-[#000] transition-all duration-200 ease-linear">
                 </div>
 
             </form>
-            <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem]">
+            <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem] md:absolute md:right-[4.2rem] md:mt-[13rem] md:text-center lg:right-[15%] lg:top-[-10%]">
                 <p class="logo text-[2rem] text-[#ff2c2c] font-semibold">LEMONaide</p>
                 <p>123-456-7889</p>
                 <p>lemonAide@gmail.com</p>
@@ -64,7 +77,7 @@
             </div>
         </footer>
 
-        <div class="bg-[#fff] h-[100vh] w-[100%] fixed top-0 justify-center scale-y-0" id="burger-nav">
+        <div class="bg-[#fff] h-[100vh] w-[100%] fixed top-0 justify-center scale-y-0 lg:hidden" id="burger-nav">
             <ul class="mt-[6rem] text-center flex flex-col gap-[3rem] text-[1.5rem] text-[#ff2c2c]">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>

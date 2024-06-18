@@ -10,53 +10,66 @@
 </head>
 <body>
     <section>
-        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[1rem] sticky top-0" id="nav">
+        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[2rem] sticky top-0 bg-[#fff] lg:h-[23vh] lg:px-[2rem]" id="nav">
             <div>
-                <h1 class="logo text-[2rem] font-bold text-[#ff2c2c]">LEMONaide</h1>
+                <h1 class="logo text-[2rem] font-bold text-[#ff2c2c] lg:text-[3rem]">LEMONaide</h1>
                 <p class="text-[.9rem] font-medium">Thoughts on Lifestyle & Mental Health</p>
             </div>
+            <ul class="lg:flex flex-row items-center gap-[3rem] text-[#000] hidden">
+                <li class="hover:text-[#ff2c2c]"><a href="index.html">Home</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="about.html">About</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="benefits.html">Benefits</a></li>
+                <li class="hover:text-[#ff2c2c]"><a href="testimonials.html">Testimonials</a></li>
+                <a href="joinUs.html"><li class="cursor-pointer bg-[#fff] text-[#ff2c2c] px-[2rem] py-[.5rem] border-[1px] border-[solid] border-[#ff2c2c] rounded-[5px] hover:bg-[#ff2c2c] hover:text-[#fff] transition-all duration-200 ease-linear">Join Us</li></a>
+            </ul>
         </nav>
 
-        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem]" id="nav-button">
+        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem] lg:hidden" id="nav-button">
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
         </div>
 
-        <main class="bg-about-image bg-cover bg-center w-[100%] h-[110vh] mt-[1rem] text-center px-[1rem] py-[2rem] flex flex-col gap-[2rem]">
-            <h1 class="page-title font-semibold text-[2rem] text-[#ff2c2c]">About Us</h1>
-            <h4 class="sub text-[#fff] font-semibold text-[1.3rem]">Why We Share This Information</h4>
-            <p class="text-[#fff]">We believe in empowering you with knowledge to make small changes that lead to significant health improvements. Lemon water is a simple, accessible, and highly beneficial habit that anyone can adopt. By providing these insights, we aim to help you lead a healthier, more vibrant life.</p>
-            <p class="text-[#fff]">Our mission is to inform and inspire you to integrate this refreshing drink into your daily routine, reaping its myriad advantages without overwhelming adjustments to your lifestyle.</p>
-            <div class="flex flex-col gap-[1.5rem] items-center">
+        <main class="bg-about-image bg-cover bg-center w-[100%] h-[120vh] mt-[1rem] text-center px-[1rem] py-[2rem] flex flex-col gap-[2rem] md:h-[120vh] md:items-center md:justify-center">
+            <h1 class="page-title font-semibold text-[2rem] text-[#ff2c2c] md:text-[3rem]">About Us</h1>
+            <h4 class="sub text-[#fff] font-semibold text-[1.3rem] md:text-[2rem]">Why We Share This Information</h4>
+            <p class="text-[#fff] md:w-[60%] md:leading-loose md:text-[1.1rem]">We believe in empowering you with knowledge to make small changes that lead to significant health improvements. Lemon water is a simple, accessible, and highly beneficial habit that anyone can adopt. By providing these insights, we aim to help you lead a healthier, more vibrant life.</p>
+            <p class="text-[#fff] md:w-[60%] md:leading-loose md:text-[1.1rem]">Our mission is to inform and inspire you to integrate this refreshing drink into your daily routine, reaping its myriad advantages without overwhelming adjustments to your lifestyle.</p>
+            <div class="flex flex-col gap-[1.5rem] items-center md:text-[1.1rem]">
                 <p class="text-[#fff]">Want to learn more? Join Us!</p>
-                <button class="bg-[transparent] border-[1px] border-[#fff] border-[solid] text-[#fff] p-[1rem] px-[4rem] font-normal w-[fit-content] rounded-[5px] active:bg-[#fff] active:text-[#000]"><a href="joinUs.html">Join Us</a></button>
+                <button class="bg-[transparent] border-[1px] border-[#fff] border-[solid] text-[#fff] p-[1rem] px-[4rem] font-normal w-[fit-content] rounded-[5px] active:bg-[#fff] active:text-[#000] hover:bg-[#fff] hover:text-[#000] transition-all duration-200 ease-linear"><a href="joinUs.html">Join Us</a></button>
             </div>
         </main>
 
-        <footer class="bg-[#363636] flex flex-col text-center p-[2rem] py-[3rem]">
-            <div class="text-[#fff] text-[1.6rem] flex gap-[1.5rem]">
+        <footer class="bg-[#363636] flex flex-col text-center p-[2rem] py-[3rem] md:flex-row md:py-[1rem] md:px-[3rem] lg:px-[10%] relative">
+            <div class="text-[#fff] text-[1.6rem] flex gap-[1.5rem] md:absolute md:right-[5rem] md:pt-[10rem] lg:right-[10%] lg:lg:top-[-15%] lg:gap-[5rem]">
                 <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-x-twitter"></i>
                 <i class="fa-brands fa-tiktok"></i>
             </div>
-            <form action="" class="flex flex-col w-[100%] text-left gap-[.5rem] pt-[2rem] pb-[1rem] form">
+            <form action="" class="flex flex-col text-left gap-[.5rem] pt-[2rem] pb-[1rem] form md:w-[50%] md:order-[-1] lg:w-[fit-content]">
                 <h1 class="text-[2rem] text-[#fff] font-semibold">Contact Us</h1>
                 <p class="text-[1.3rem] text-[#fff] font-extralight">Ask us anything</p>
                 
-                <div class="flex flex-col mt-[2rem] gap-[1rem] text-[1.2rem] text-[#fff]">
-                <label for="name" class="font-extralight">Name:</label>
-                <input type="text" id="name" class="outline-none p-[.5rem]" autocomplete="off" required>
-                <label for="email" class="font-extralight">Email:</label>
-                <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off" required>
-                <label for="message" class="font-extralight">Leave us a message...</label>
-                <textarea name="" id="message" class="outline-none p-[.5rem]" autocomplete="off" required></textarea>
-                <input type="submit" value="Submit" class="border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] font-extralight active:bg-[#fff] active:text-[#000]">
+                <div class="flex flex-col mt-[2rem] gap-[1rem] text-[1.2rem] text-[#fff] md:mt-[1rem] md:gap-[.5rem] md:text-[1rem]">
+                <div class="flex flex-col gap-[1rem] lg:flex-row">
+                    <div class="flex flex-col">
+                        <label for="name" class="font-extralight">Name:</label>
+                        <input type="text" id="name" class="outline-none p-[.5rem] font-normal" autocomplete="off" required>
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="email" class="font-extralight">Email:</label>
+                        <input type="text" id="email" class="outline-none p-[.5rem]" autocomplete="off" required>
+                    </div>
+                </div>
+                <label for="message" class="font-extralight lg:mt-[1rem]">Leave us a message...</label>
+                <textarea name="" id="message" class="outline-none p-[.5rem] resize-none" autocomplete="off" required></textarea>
+                <input type="submit" value="Submit" class="font-normal border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] active:bg-[#fff] active:text-[#000] md:mt-[1rem] cursor-pointer hover:bg-[#fff] hover:text-[#000] transition-all duration-200 ease-linear">
                 </div>
 
             </form>
-            <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem]">
+            <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem] md:absolute md:right-[4.2rem] md:mt-[13rem] md:text-center lg:right-[15%] lg:top-[-10%]">
                 <p class="logo text-[2rem] text-[#ff2c2c] font-semibold">LEMONaide</p>
                 <p>123-456-7889</p>
                 <p>lemonAide@gmail.com</p>

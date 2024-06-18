@@ -26,12 +26,12 @@ navButton.addEventListener('click', () => {
         
 })
 
-// when the user scrolls down from the top (scrolY = 0), the logo and burger nav will disappear
+// when the user scrolls down from the top (scrolY = 0), the logo and nav will disappear
 document.addEventListener('scroll', () => {
 
     const nav = document.getElementById('nav');
 
-    if(scrollY > 0) {
+    if(scrollY > 80) {
         nav.style.opacity = 0;
         navButton.style.opacity = 0;
         navButton.style.zIndex = -1;

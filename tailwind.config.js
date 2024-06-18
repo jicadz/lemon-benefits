@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       boxShadow: {
-        'button-shadow' : '0 0 8px gray',
+        'button-shadow' : '0 0 15px gray',
         'button-shadow2' : '0 0 8px white'
       },
       backgroundImage: {
