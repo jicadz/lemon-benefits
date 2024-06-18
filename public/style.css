@@ -600,6 +600,14 @@ video {
   z-index: 99;
 }
 
+.z-\[\]{
+  z-index: ;
+}
+
+.z-\[100\]{
+  z-index: 100;
+}
+
 .mb-\[1rem\]{
   margin-bottom: 1rem;
 }
