@@ -4,6 +4,7 @@
 const navButton = document.getElementById('nav-button');
 const burgerNav = document.getElementById('burger-nav');
 const xShape = document.querySelector('.spans');
+const desktopNav = document.getElementById('desktop-nav');
 
 // toggles classes that transforms the 3 spans to form a burger nav button and X button
 navButton.addEventListener('click', () => {
@@ -35,11 +36,14 @@ document.addEventListener('scroll', () => {
         nav.style.opacity = 0;
         navButton.style.opacity = 0;
         navButton.style.zIndex = -1;
+        desktopNav.style.display = 'none';
     } else {
         nav.style.opacity = 1;
         navButton.style.opacity = 1;
         navButton.style.zIndex = 99;
+        desktopNav.style.display = 'flex';
     }
+
 })
 
 

@@ -10,12 +10,12 @@
 </head>
 <body>
     <section>
-        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[2rem] sticky top-0 bg-[#fff] lg:h-[23vh] lg:px-[2rem]" id="nav">
+        <nav class="flex justify-between items-center h-[15vh] w-[100%] px-[1rem] pt-[2.5rem] pb-[2rem] sticky top-0 bg-[#fff] lg:h-[23vh] md:px-[3rem]" id="nav">
             <div>
                 <h1 class="logo text-[2rem] font-bold text-[#ff2c2c] lg:text-[3rem]">LEMONaide</h1>
                 <p class="text-[.9rem] font-medium">Thoughts on Lifestyle & Mental Health</p>
             </div>
-            <ul class="lg:flex flex-row items-center gap-[3rem] text-[#000] hidden">
+            <ul class="lg:flex flex-row items-center gap-[3rem] text-[#000] hidden" id="desktop-nav">
                 <li class="hover:text-[#ff2c2c]"><a href="index.html">Home</a></li>
                 <li class="hover:text-[#ff2c2c]"><a href="about.html">About</a></li>
                 <li class="hover:text-[#ff2c2c]"><a href="benefits.html">Benefits</a></li>
@@ -24,7 +24,7 @@
             </ul>
         </nav>
 
-        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem] lg:hidden" id="nav-button">
+        <div class="spans flex flex-col gap-[.5rem] mb-[1rem] fixed z-[99] right-[1.2rem] top-[2.3rem] md:top-[4rem] md:right-[3rem] lg:hidden" id="nav-button">
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
             <span class="w-[35px] h-[4px] rounded-[5px] bg-[#ff2c2c] block"></span>
@@ -34,11 +34,11 @@
             <i class="fa fa-chevron-circle-up text-[#ff2c2c] text-[3rem]" aria-hidden="true"></i>
         </div>
 
-        <main class="flex flex-col items-center gap-[1.5rem] pt-[1rem] pb-[6rem] px-[1rem]">
+        <main class="flex flex-col items-center gap-[1.5rem] pt-[2rem] pb-[6rem] px-[1rem]">
             <h1 class="page-title font-semibold text-[1.8rem] text-center text-[#ff2c2c] md:text-[3rem]">Testimonials</h1>
             <p class="text-center md:w-[60%]">Lemon water enthusiasts praise its refreshing taste and health benefits. These testimonials highlight the simplicity and effectiveness of adding lemon water to daily routines for a natural health boost.</p>
 
-            <div class="w-[100%] flex flex-col items-center lg:flex-row lg:gap-[2rem] lg:px-[2rem]">
+            <div class="w-[100%] flex flex-col items-center md:mt-[10%] lg:flex-row lg:gap-[2rem] lg:px-[2rem]">
                 <div class="relative h-[fit-content] p-[1rem] pb-[3rem] w-[100%] mt-[6rem] bg-[#fff] text-center shadow-button-shadow flex flex-col items-center gap-[1rem] md:w-[60%] lg:h-[530px]">
                     <div class="rounded-[50%] h-[100px] w-[100px] bg-user-1 absolute bg-cover bg-center overflow-hidden shadow-button-shadow top-[0] user-image"></div>
                     <p class="mt-[4rem]">Jina P.</p>
@@ -71,14 +71,8 @@
             </div>
         </main>
 
-        <footer class="bg-[#363636] flex flex-col text-center p-[2rem] py-[3rem] md:flex-row md:py-[1rem] md:px-[3rem] lg:px-[10%] relative">
-            <div class="text-[#fff] text-[1.6rem] flex gap-[1.5rem] md:absolute md:right-[5rem] md:pt-[10rem] lg:right-[10%] lg:lg:top-[-15%] lg:gap-[5rem]">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-                <i class="fa-brands fa-tiktok"></i>
-            </div>
-            <form action="" class="flex flex-col text-left gap-[.5rem] pt-[2rem] pb-[1rem] form md:w-[50%] md:order-[-1] lg:w-[fit-content]">
+        <footer class="bg-[#363636] flex flex-col text-center pt-[2rem] px-[1.5rem] pb-[3rem] md:flex-row md:items-center md:justify-between md:px-[4rem]">
+            <form action="" class="flex flex-col text-left gap-[.5rem] pb-[1rem] form md:w-[50%] lg:w-[fit-content]">
                 <h1 class="text-[2rem] text-[#fff] font-semibold">Contact Us</h1>
                 <p class="text-[1.3rem] text-[#fff] font-extralight">Ask us anything</p>
                 
@@ -97,13 +91,20 @@
                 <textarea name="" id="message" class="outline-none p-[.5rem] resize-none" autocomplete="off" required></textarea>
                 <input type="submit" value="Submit" class="font-normal border-[1px] border-[#fff] border-[solid] px-[2.5rem] py-[.5rem] w-[fit-content] active:bg-[#fff] active:text-[#000] md:mt-[1rem] cursor-pointer hover:bg-[#fff] hover:text-[#000] transition-all duration-200 ease-linear">
                 </div>
-
             </form>
-            <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem] md:absolute md:right-[4.2rem] md:mt-[13rem] md:text-center lg:right-[15%] lg:top-[-10%]">
-                <p class="logo text-[2rem] text-[#ff2c2c] font-semibold">LEMONaide</p>
-                <p>123-456-7889</p>
-                <p>lemonAide@gmail.com</p>
-                <p>&#169 by LEMONaide 2024</p>
+            <div class="mt-[3rem] lg:mr-[7%]">
+                <div class="text-[#fff] text-[1.6rem] flex gap-[2rem] lg:gap-[4rem]">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+                <div class="text-[#fff] text-left mt-[2rem] flex flex-col gap-[.5rem] md:text-center">
+                    <p class="logo text-[2rem] text-[#ff2c2c] font-semibold">LEMONaide</p>
+                    <p>123-456-7889</p>
+                    <p>lemonAide@gmail.com</p>
+                    <p>&#169 by LEMONaide 2024</p>
+                </div>
             </div>
         </footer>
 
