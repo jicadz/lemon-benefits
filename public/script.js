@@ -27,21 +27,37 @@ navButton.addEventListener('click', () => {
         
 })
 
+// desktopNav.querySelector('a').addEventListener('click', (e) => {
+//     e.preventDefault();
+// })
+
+const removeClick = (event) => {
+    event.preventDefault();
+}
+
+const arrayA = [...desktopNav.querySelectorAll('a')];
+
 // when the user scrolls down from the top (scrolY = 0), the logo and nav will disappear
 document.addEventListener('scroll', () => {
 
     const nav = document.getElementById('nav');
 
-    if(scrollY > 80) {
+    if(scrollY > 50) {
         nav.style.opacity = 0;
         navButton.style.opacity = 0;
         navButton.style.zIndex = -1;
-        desktopNav.style.display = 'none';
+        arrayA.forEach(a => {
+            a.addEventListener('click', removeClick);
+            a.style.cursor = 'default';
+        });
     } else {
         nav.style.opacity = 1;
         navButton.style.opacity = 1;
         navButton.style.zIndex = 99;
-        desktopNav.style.display = 'flex';
+        arrayA.forEach(a => {
+            a.removeEventListener('click', removeClick);
+            a.style.cursor = 'pointer';
+        });
     }
 
 })
